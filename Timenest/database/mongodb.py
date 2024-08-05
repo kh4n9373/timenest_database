@@ -1,7 +1,5 @@
 import pymongo
 from constants.config import MONGODB_URL
-
-
 class MongoManager:
     __instances = {}
 
