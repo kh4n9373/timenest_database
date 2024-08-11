@@ -11,7 +11,7 @@ def index():
 
 @app.route('/create-account')
 def create_account_page():
-    return render_template('create_acount.html')
+    return render_template('login.html')
 
 @app.route("/login", methods=['POST'])
 def login():

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="public/TIMENEST-05.svg" />
+  <link rel="icon" type="static/svg+xml" href="public/TIMENEST-05.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="/style_login.css" />
+  <link rel="stylesheet" href="/static/styles/style_login.css" />
   <title>Timenest: Login Page</title>
 </head>
 
@@ -39,12 +39,12 @@
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
-                    <a href="#hero"><img src="/image/Logo_Landing.svg" alt="timenest"></a>
+                    <a href="#hero"><img src="/static/Logo_Landing.svg" alt="timenest"></a>
                     <p>Enter your personal details to use all of site features</p>
                     <button class="hidden" id="login">Log In</button>
                 </div>
                 <div class="toggle-panel toggle-right">
-                    <a href="#hero"><img src="/image/Logo_Landing.svg" alt="timenest"></a>
+                    <a href="#hero"><img src="/static/Logo_Landing.svg" alt="timenest"></a>
                     <p>Register with your personal details to use all of site features</p>
                     <button class="hidden" id="register">Sign Up</button>
                 </div>
@@ -90,7 +90,11 @@
 
             const result = await response.json();
             document.getElementById("loginResponse").textContent = result.message || result.error;
-
+            // if (response.status === 201) {
+            //     alert(data.message); // Display success message in a pop-up
+            // } else {
+            //     alert(data.error); // Display error message in a pop-up
+            // }
             if (response.ok) {
                 window.location.href = "http://localhost:3000";
             }
