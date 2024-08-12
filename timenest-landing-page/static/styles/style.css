@@ -191,7 +191,7 @@ body {
 }
 
 .partone {
-  background-image: url("/image/Background-01.svg");
+  background-image: url("../Background-01.svg");
   background-size: cover;
 }
 
@@ -370,7 +370,7 @@ nav {
 .break {
   height: 140px;
   display: flex;
-  background-image: url('/image/RangCua.svg');
+  background-image: url('../RangCua.svg');
   background-size: cover;
   margin-top: -20px;
 }
@@ -428,7 +428,7 @@ nav {
 
 .footer {
   height: 250px;
-  background-image: url('/image/Background-01.svg');
+  background-image: url('../Background-01.svg');
   background-size: cover;
 }
 
